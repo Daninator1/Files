@@ -965,8 +965,7 @@
                             <Grid
                                 x:Name="Icon"
                                 AutomationProperties.Name="Thumbnail column"
-                                Opacity="{x:Bind Opacity, Mode=OneWay}"
-                                ToolTipService.ToolTip="{x:Bind FolderTooltipText}">
+                                Opacity="{x:Bind Opacity, Mode=OneWay}">
                                 <Rectangle
                                     x:Name="CutIndicator"
                                     Fill="LightGray"
@@ -1097,9 +1096,6 @@
                             <Setter Property="Opacity" Value="0.6" />
                         </Style>
                     </controls:DataGridTextColumn.CellStyle>
-                    <ToolTipService.ToolTip>
-                        <ToolTip Content="{Binding FolderTooltipText}" />
-                    </ToolTipService.ToolTip>
                 </controls:DataGridTextColumn>
                 <controls:DataGridTextColumn
                     x:Name="dateDeletedColumn"
@@ -1117,9 +1113,6 @@
                             <Setter Property="Opacity" Value="0.6" />
                         </Style>
                     </controls:DataGridTextColumn.CellStyle>
-                    <ToolTipService.ToolTip>
-                        <ToolTip Content="{Binding FolderTooltipText}" />
-                    </ToolTipService.ToolTip>
                 </controls:DataGridTextColumn>
                 <controls:DataGridTextColumn
                     x:Name="dateColumn"
@@ -1137,9 +1130,6 @@
                             <Setter Property="Opacity" Value="0.6" />
                         </Style>
                     </controls:DataGridTextColumn.CellStyle>
-                    <ToolTipService.ToolTip>
-                        <ToolTip Content="{Binding FolderTooltipText}" />
-                    </ToolTipService.ToolTip>
                 </controls:DataGridTextColumn>
                 <controls:DataGridTextColumn
                     x:Name="dateCreatedColumn"
@@ -1157,9 +1147,6 @@
                             <Setter Property="Opacity" Value="0.6" />
                         </Style>
                     </controls:DataGridTextColumn.CellStyle>
-                    <ToolTipService.ToolTip>
-                        <ToolTip Content="{Binding FolderTooltipText}" />
-                    </ToolTipService.ToolTip>
                 </controls:DataGridTextColumn>
                 <controls:DataGridTextColumn
                     x:Name="typeColumn"
@@ -1177,9 +1164,6 @@
                             <Setter Property="Opacity" Value="0.6" />
                         </Style>
                     </controls:DataGridTextColumn.CellStyle>
-                    <ToolTipService.ToolTip>
-                        <ToolTip Content="{Binding FolderTooltipText}" />
-                    </ToolTipService.ToolTip>
                 </controls:DataGridTextColumn>
                 <controls:DataGridTextColumn
                     x:Name="sizeColumn"
@@ -1198,9 +1182,6 @@
                             <Setter Property="Opacity" Value="0.6" />
                         </Style>
                     </controls:DataGridTextColumn.CellStyle>
-                    <ToolTipService.ToolTip>
-                        <ToolTip Content="{Binding FolderTooltipText}" />
-                    </ToolTipService.ToolTip>
                 </controls:DataGridTextColumn>
             </controls:DataGrid.Columns>
         </controls:DataGrid>

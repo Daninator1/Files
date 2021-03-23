@@ -1590,8 +1590,7 @@ namespace Files.ViewModels
                     ItemOriginalPath = item.FilePath,
                     LoadUnknownTypeGlyph = false,
                     FileSize = null,
-                    FileSizeBytes = 0,
-                    //FolderTooltipText = tooltipString,
+                    FileSizeBytes = 0
                 };
             }
             else

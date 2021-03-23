@@ -17,7 +17,6 @@ namespace Files.Filesystem
         public bool IsHiddenItem { get; set; } = false;
         public StorageItemTypes PrimaryItemAttribute { get; set; }
         public bool ItemPropertiesInitialized { get; set; } = false;
-        public string FolderTooltipText { get; set; }
         public string FolderRelativeId { get; set; }
         public bool ContainsFilesOrFolders { get; set; }
         private bool loadFolderGlyph;
