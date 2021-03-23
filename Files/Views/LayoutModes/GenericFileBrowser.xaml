@@ -1036,19 +1036,28 @@
                         </DataTemplate>
                     </controls:DataGridTemplateColumn.CellTemplate>
                 </controls:DataGridTemplateColumn>
-                <controls:DataGridTextColumn
+                <controls:DataGridTemplateColumn
                     x:Name="nameColumn"
                     x:Uid="nameColumn"
                     Width="275"
-                    Binding="{Binding ItemName}"
                     DisplayIndex="1"
-                    FontSize="14"
                     Header="Name"
                     Tag="Name">
-                    <ToolTipService.ToolTip>
-                        <ToolTip Content="{Binding FolderTooltipText}" />
-                    </ToolTipService.ToolTip>
-                </controls:DataGridTextColumn>
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                                Text="{Binding ItemName}"
+                                FontSize="14"
+                                Margin="12 0 0 0"
+                                TextTrimming="CharacterEllipsis"
+                                VerticalAlignment="Center">
+                                <ToolTipService.ToolTip>
+                                    <ToolTip Content="{Binding ItemName}" />
+                                </ToolTipService.ToolTip>
+                            </TextBlock>
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>
                 <controls:DataGridTemplateColumn
                     x:Name="syncStatusColumn"
                     x:Uid="syncStatusColumn"
